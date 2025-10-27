@@ -1,3 +1,3 @@
 # Added
-## .env file
-## source .env
+- .env file
+- source .env
