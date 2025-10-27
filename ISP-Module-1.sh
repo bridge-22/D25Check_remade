@@ -1,5 +1,10 @@
 #!/bin/bash
 
+read -p "Введите IP для HQ-RTR: " IPV4HQ
+read -p "Введите IP для BR-RTR: " IPV4BR
+echo "IPV4HQ=\"$IPV4HQ\"" > .env
+echo "IPV4BR=\"$IPV4BR\"" >> .env
+
 # Файл для записи результатов
 LOG_FILE="system_check_results.txt"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
